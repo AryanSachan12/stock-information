@@ -1,0 +1,27 @@
+.dashBoardEarnings {
+    height: min-content;
+    background-color: #21222d;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+.dashBoardEarnings h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.dashBoardEarnings h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #a9dfd8;
+}
+.dashBoardEarnings p {
+    color: #87888c;
+}
+
+.radialChart {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

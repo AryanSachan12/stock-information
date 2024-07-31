@@ -1,0 +1,51 @@
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  max-height: 400px;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+}
+
+.listHeader,
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.listHeader {
+  font-weight: bold;
+}
+
+.listItem {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.listItem span {
+  flex: 1; /* Ensure all spans within listItem take equal space */
+  text-align: center; /* Center the text */
+}
+
+.listItem span:first-child {
+  flex: 0.5; /* Make the first span smaller */
+}
+
+.popularity {
+  flex: 2; /* Make the popularity span larger */
+  background-color: #2b2b36; /* Light background for visual contrast */
+  position: relative;
+  height: 10px;
+  border-radius: 5px;
+  margin-left: 2px;
+}
+
+.popularityActual {
+  height: 10px; 
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  transition: width 0.3s ease; 
+  margin-left: 2px;
+}

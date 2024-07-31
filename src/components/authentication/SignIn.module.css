@@ -1,0 +1,12 @@
+.signIn {
+  background-color: #21222d;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+    font-size: 4rem;
+    color: white;
+}

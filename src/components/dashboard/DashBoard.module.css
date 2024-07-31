@@ -1,0 +1,159 @@
+.dashboardMain{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+.inputContainer {
+    background-color: #21222d;
+    color: #d2d2d2;
+    height: 3rem;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 15px;
+    gap: 2rem;
+}
+.inputContainer input {
+    width: 100%;
+}
+.iconContainer {
+    width: 30%;
+}
+header input {
+    background: none;
+}
+.icon {
+    
+}
+
+.firstContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 20rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+.dashboardCardsContainer {
+    width: 60%;
+    height: auto;
+    background-color: #21222d;
+    border-radius: 15px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.dashboardCardsContainer h1{
+    font-size: 1.75rem;
+}
+.dashboardCardsContainer .cardTitle p {
+    color: #a0a0a0;
+}
+.dashboardCardsContainerMain {
+    display: flex;
+    justify-content: space-between;
+}
+
+.barChartContainer {
+    width: 100%;
+    height: auto;
+    background-color: #21222d;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.secondContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 20rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+.dashBoardListContainer {
+    background-color: #21222d;
+    width: max-content;
+    height: auto;
+    border-radius: 15px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.dashBoardList {
+    display: flex;
+    overflow-y: scroll;
+    width: 40rem;
+}
+
+.lineChartContainer {
+    width: 100%;
+    height: auto;
+    background-color: #21222d;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+
+.thirdContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 20rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.dashBoardEarnings {
+    height: min-content;
+    background-color: #21222d;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+.areaChartContainer {
+    width: 60%;
+    height: auto;
+    background-color: #21222d;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+
+@media screen and (max-width:1440px){
+    .firstContainer, .secondContainer, .thirdContainer {
+        flex-direction: column;
+        height: min-content;
+    }
+    .dashboardCardsContainer, .barChartContainer, .dashBoardListContainer, .lineChartContainer, .dashBoardEarnings, .areaChartContainer {
+        height: 20rem;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .dashBoardList {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:780px){
+    body, h1, h2, h3, h4, h5, h6, p, input, .icon {
+        font-size: 90%; 
+    }
+
+    .dashboardCardsContainerMain {
+        display: flex;
+        overflow: scroll;
+    }
+}

@@ -1,0 +1,74 @@
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  color: white;
+}
+
+.sidebarContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15rem; /* Adjust width as needed */
+  height: 100%;
+  background-color: #171821;
+  border-right: 2px solid #2c2d33;
+  padding: 20px;
+  overflow-y: auto;
+}
+.sidebarContainer h1 {
+    padding: 10px;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.buttonContainer, .buttonsContainer button {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  border-radius: 0.85rem;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+.buttonContainer:hover {
+  background-color: #a9dfd8;
+}
+.buttonsContainer a, .buttonsContainer button {
+  width: 100%;
+  color: #87888c;
+  font-weight: 600;
+}
+.buttonsContainer a:hover, .buttonsContainer button:hover{
+  color: #171821;
+  background-color: #a9dfd8;
+}
+.buttonsContainer button  {
+    margin-top: 5rem;
+}
+
+.content {
+  margin-left: 15rem;
+  flex-grow: 1;
+  background-color: #171821;
+  overflow-y: auto;
+  height: auto;
+}
+
+@media screen and (max-width: 645px) {
+  .main h1 {
+    display: none;
+  }
+  .sidebarContainer {
+    width: 4rem; 
+  }
+  .buttonsContainer p{
+    display: none;
+  }
+  .content {
+    margin-left: 4rem;
+  }
+}
